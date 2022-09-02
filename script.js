@@ -1,12 +1,14 @@
-const item1 = document.querySelector(".giveRandom");
-
-function changeColor(){
-    item1.classList.toggle("green");
+function playRock(){
+    let computerChoice = Math.floor(Math.random()*3);
+    if(computerChoice === 0){
+        console.log("You won! You chose rock and the computer chose scissors");
+    }else if(computerChoice === 1){
+        console.log("It's a tie, you both chose rock");
+    }else if(computerChoice === 2){
+        console.log("You lost... You chose rock and the computer chose paper");
+    }
 }
 
-function returnNumber(){
-    console.log(Math.floor(Math.random()*3));
-}
+const rockbutton = document.querySelector("#rock");
 
-item1.addEventListener("dblclick", returnNumber);
-
+rockbutton.addEventListener("click", playRock);
