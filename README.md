@@ -1,1 +1,1 @@
-# first-JS
+This is my first project using JavaScript. The objective is to build a rock, paper, scissors game.
