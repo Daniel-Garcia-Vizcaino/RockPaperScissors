@@ -25,7 +25,7 @@ function playPaper(){
         answer.innerHTML = "You won! You chose paper and the computer chose rock";
     }else if(computerChoice === 1){
         console.log("It's a tie, you both chose paper");
-        answer.innerHTML = "It's a tie, you both chose rock";
+        answer.innerHTML = "It's a tie, you both chose paper";
     }else if(computerChoice === 2){
         console.log("You lost... You chose paper and the computer chose scissors");
         answer.innerHTML = "You lost... You chose paper and the computer chose scissors";
