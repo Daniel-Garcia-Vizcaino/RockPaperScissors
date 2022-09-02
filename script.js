@@ -12,3 +12,33 @@ function playRock(){
 const rockbutton = document.querySelector("#rock");
 
 rockbutton.addEventListener("click", playRock);
+
+function playPaper(){
+    let computerChoice = Math.floor(Math.random()*3);
+    if(computerChoice === 0){
+        console.log("You won! You chose paper and the computer chose rock");
+    }else if(computerChoice === 1){
+        console.log("It's a tie, you both chose rock");
+    }else if(computerChoice === 2){
+        console.log("You lost... You chose paper and the computer chose scissors");
+    }
+}
+
+const paperbutton = document.querySelector("#paper");
+
+paperbutton.addEventListener("click", playPaper);
+
+function playScissors(){
+    let computerChoice = Math.floor(Math.random()*3);
+    if(computerChoice === 0){
+        console.log("You won! You chose scissors and the computer chose paper");
+    }else if(computerChoice === 1){
+        console.log("It's a tie, you both chose rock");
+    }else if(computerChoice === 2){
+        console.log("You lost... You chose scissors and the computer chose rock");
+    }
+}
+
+const scissorsbutton = document.querySelector("#scissors");
+
+scissorsbutton.addEventListener("click", playScissors);
