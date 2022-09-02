@@ -1,3 +1,21 @@
 .buttonsrow{
     margin: 100px 0px 100px 0px;
 }
+
+.maincontainer{
+    background-color: skyblue;
+    height: 1000px;
+}
+
+.mainheader{
+    color: rgb(91, 163, 65);
+    font-size: 70px;
+}
+
+.choosebutton{
+    border: solid 2px saddlebrown;
+}
+
+.answertext{
+    font-size: 40px;
+}
