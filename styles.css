@@ -1,25 +1,25 @@
-.buttonsrow{
+.buttonsRow{
     margin: 100px 0px 100px 0px;
 }
 
-.maincontainer{
+.mainContainer{
     background-color: skyblue;
     height: 1000px;
 }
 
-.mainheader{
+.mainHeader{
     color: rgb(91, 163, 65);
     font-size: 70px;
 }
 
-.choosebutton{
+.chooseButton{
     border: solid 2px saddlebrown;
 }
 
-.answertext{
+.answerText{
     font-size: 40px;
 }
 
-.answerrow{
+.answerRow{
     margin-bottom: 75px;
 }
