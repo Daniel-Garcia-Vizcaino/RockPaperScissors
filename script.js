@@ -11,8 +11,6 @@ function playRock(){
         yourScoreText.innerHTML = playerScore;
         answer.innerHTML = "You won! You chose rock and the computer chose scissors";
         if (playerScore > 4) {
-            computerScoreText.innerHTML = ":(";
-            yourScoreText.innerHTML = "You won!";
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You won! Refresh the page to play again";
             const rockbutton = document.querySelector("#rock");
@@ -29,8 +27,6 @@ function playRock(){
         computerScoreText.innerHTML = computerScore;
         answer.innerHTML = "You lost... You chose rock and the computer chose paper";
         if (computerScore > 4) {
-            computerScoreText.innerHTML = "I won!!";
-            yourScoreText.innerHTML = ":(";
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You lost, refresh the page to play again";
             const rockbutton = document.querySelector("#rock");
@@ -55,8 +51,6 @@ function playPaper(){
         yourScoreText.innerHTML = playerScore;
         answer.innerHTML = "You won! You chose paper and the computer chose rock";
         if (playerScore > 4) {
-            computerScoreText.innerHTML = ":(";
-            yourScoreText.innerHTML = "You won!";
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You won! Refresh the page to play again";
             const paperbutton = document.querySelector("#paper");
@@ -73,8 +67,6 @@ function playPaper(){
         computerScoreText.innerHTML = computerScore;
         answer.innerHTML = "You lost... You chose paper and the computer chose scissors";
         if (computerScore > 4) {
-            computerScoreText.innerHTML = "I won!!";
-            yourScoreText.innerHTML = ":(";
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You lost, refresh the page to play again";
             const paperbutton = document.querySelector("#paper");
@@ -99,8 +91,6 @@ function playScissors(){
         yourScoreText.innerHTML = playerScore;
         answer.innerHTML = "You won! You chose scissors and the computer chose paper";
         if (playerScore > 4) {
-            computerScoreText.innerHTML = ":(";
-            yourScoreText.innerHTML = "You won!";
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You won! Refresh the page to play again";
             const scissorsbutton = document.querySelector("#scissors");
@@ -117,8 +107,6 @@ function playScissors(){
         computerScoreText.innerHTML = computerScore;
         answer.innerHTML = "You lost... You chose scissors and the computer chose rock";
         if (computerScore > 4) {
-            computerScoreText.innerHTML = "I won!!";
-            yourScoreText.innerHTML = ":(";
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You lost, refresh the page to play again";
             const scissorsbutton = document.querySelector("#scissors");
