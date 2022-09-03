@@ -10,12 +10,36 @@ function playRock(){
         playerScore += 1;
         yourScoreText.innerHTML = playerScore;
         answer.innerHTML = "You won! You chose rock and the computer chose scissors";
+        if (playerScore > 4) {
+            computerScoreText.innerHTML = ":(";
+            yourScoreText.innerHTML = "You won!";
+            let answer = document.querySelector("#answer");
+            answer.innerHTML = "You won! Refresh the page to play again";
+            const rockbutton = document.querySelector("#rock");
+            rockbutton.removeEventListener("click", playRock);
+            const scissorsbutton = document.querySelector("#scissors");
+            scissorsbutton.removeEventListener("click", playScissors);
+            const paperbutton = document.querySelector("#paper");
+            paperbutton.removeEventListener("click", playPaper);
+        }
     }else if(computerChoice === 1){
         answer.innerHTML = "It's a tie, you both chose rock";
     }else if(computerChoice === 2){
         computerScore += 1;
         computerScoreText.innerHTML = computerScore;
         answer.innerHTML = "You lost... You chose rock and the computer chose paper";
+        if (computerScore > 4) {
+            computerScoreText.innerHTML = "I won!!";
+            yourScoreText.innerHTML = ":(";
+            let answer = document.querySelector("#answer");
+            answer.innerHTML = "You lost, refresh the page to play again";
+            const rockbutton = document.querySelector("#rock");
+            rockbutton.removeEventListener("click", playRock);
+            const scissorsbutton = document.querySelector("#scissors");
+            scissorsbutton.removeEventListener("click", playScissors);
+            const paperbutton = document.querySelector("#paper");
+            paperbutton.removeEventListener("click", playPaper);
+        }
     }
 }
 
@@ -30,12 +54,36 @@ function playPaper(){
         playerScore += 1;
         yourScoreText.innerHTML = playerScore;
         answer.innerHTML = "You won! You chose paper and the computer chose rock";
+        if (playerScore > 4) {
+            computerScoreText.innerHTML = ":(";
+            yourScoreText.innerHTML = "You won!";
+            let answer = document.querySelector("#answer");
+            answer.innerHTML = "You won! Refresh the page to play again";
+            const paperbutton = document.querySelector("#paper");
+            paperbutton.removeEventListener("click", playPaper);
+            const rockbutton = document.querySelector("#rock");
+            rockbutton.removeEventListener("click", playRock);
+            const scissorsbutton = document.querySelector("#scissors");
+            scissorsbutton.removeEventListener("click", playScissors);
+        }
     }else if(computerChoice === 1){
         answer.innerHTML = "It's a tie, you both chose paper";
     }else if(computerChoice === 2){
         computerScore += 1;
         computerScoreText.innerHTML = computerScore;
         answer.innerHTML = "You lost... You chose paper and the computer chose scissors";
+        if (computerScore > 4) {
+            computerScoreText.innerHTML = "I won!!";
+            yourScoreText.innerHTML = ":(";
+            let answer = document.querySelector("#answer");
+            answer.innerHTML = "You lost, refresh the page to play again";
+            const paperbutton = document.querySelector("#paper");
+            paperbutton.removeEventListener("click", playPaper);
+            const rockbutton = document.querySelector("#rock");
+            rockbutton.removeEventListener("click", playRock);
+            const scissorsbutton = document.querySelector("#scissors");
+            scissorsbutton.removeEventListener("click", playScissors);
+        }
     }
 }
 
@@ -50,12 +98,36 @@ function playScissors(){
         playerScore += 1;
         yourScoreText.innerHTML = playerScore;
         answer.innerHTML = "You won! You chose scissors and the computer chose paper";
+        if (playerScore > 4) {
+            computerScoreText.innerHTML = ":(";
+            yourScoreText.innerHTML = "You won!";
+            let answer = document.querySelector("#answer");
+            answer.innerHTML = "You won! Refresh the page to play again";
+            const scissorsbutton = document.querySelector("#scissors");
+            scissorsbutton.removeEventListener("click", playScissors);
+            const rockbutton = document.querySelector("#rock");
+            rockbutton.removeEventListener("click", playRock);
+            const paperbutton = document.querySelector("#paper");
+            paperbutton.removeEventListener("click", playPaper);
+        }
     }else if(computerChoice === 1){
         answer.innerHTML = "It's a tie, you both chose scissors";
     }else if(computerChoice === 2){
         computerScore += 1;
         computerScoreText.innerHTML = computerScore;
         answer.innerHTML = "You lost... You chose scissors and the computer chose rock";
+        if (computerScore > 4) {
+            computerScoreText.innerHTML = "I won!!";
+            yourScoreText.innerHTML = ":(";
+            let answer = document.querySelector("#answer");
+            answer.innerHTML = "You lost, refresh the page to play again";
+            const scissorsbutton = document.querySelector("#scissors");
+            scissorsbutton.removeEventListener("click", playScissors);
+            const rockbutton = document.querySelector("#rock");
+            rockbutton.removeEventListener("click", playRock);
+            const paperbutton = document.querySelector("#paper");
+            paperbutton.removeEventListener("click", playPaper);
+        }
     }
 }
 
