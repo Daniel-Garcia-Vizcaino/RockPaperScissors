@@ -6,6 +6,7 @@ const computerScoreText = document.querySelector("#computerScore");
 function playRock(){
     let computerChoice = Math.floor(Math.random()*3);
     let answer = document.querySelector("#answer");
+    let answerIMG = document.querySelector("#resultIMG");
     if(computerChoice === 0){
         playerScore += 1;
         yourScoreText.innerHTML = playerScore;
@@ -26,6 +27,7 @@ function playRock(){
         computerScore += 1;
         computerScoreText.innerHTML = computerScore;
         answer.innerHTML = "You lost... You chose rock and the computer chose paper";
+        answerIMG.setAttribute("src", "images/LauraSadRock.jpeg");
         if (computerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You lost, refresh the page to play again";
