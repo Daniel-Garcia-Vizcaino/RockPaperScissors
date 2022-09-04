@@ -1,15 +1,10 @@
 .buttonsRow{
-    margin: 50px 0px 50px 0px;
+    margin: 5px 0px 50px 0px;
 }
 
 .mainContainer{
     background-image: url(images/background.png);
     height: 1000px;
-}
-
-.mainHeader{
-    color: rgb(30, 188, 136);
-    font-size: 70px;
 }
 
 .answerText{
