@@ -11,6 +11,7 @@ function playRock(){
         playerScore += 1;
         yourScoreText.innerHTML = playerScore;
         answer.innerHTML = "You won! You chose rock and the computer chose scissors";
+        answerIMG.setAttribute("src", "images/rockVSscissors.png");
         if (playerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You won! Refresh the page to play again";
@@ -27,7 +28,7 @@ function playRock(){
         computerScore += 1;
         computerScoreText.innerHTML = computerScore;
         answer.innerHTML = "You lost... You chose rock and the computer chose paper";
-        answerIMG.setAttribute("src", "images/LauraSadRock.jpeg");
+        answerIMG.setAttribute("src", "images/rockVSpaper.png");
         if (computerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You lost, refresh the page to play again";
@@ -52,6 +53,7 @@ function playPaper(){
         playerScore += 1;
         yourScoreText.innerHTML = playerScore;
         answer.innerHTML = "You won! You chose paper and the computer chose rock";
+        answerIMG.setAttribute("src", "images/paperVSrock.png");
         if (playerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You won! Refresh the page to play again";
@@ -68,6 +70,7 @@ function playPaper(){
         computerScore += 1;
         computerScoreText.innerHTML = computerScore;
         answer.innerHTML = "You lost... You chose paper and the computer chose scissors";
+        answerIMG.setAttribute("src", "images/paperVSscissors.png");
         if (computerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You lost, refresh the page to play again";
@@ -92,6 +95,7 @@ function playScissors(){
         playerScore += 1;
         yourScoreText.innerHTML = playerScore;
         answer.innerHTML = "You won! You chose scissors and the computer chose paper";
+        answerIMG.setAttribute("src", "images/scissorsVSpaper.png");
         if (playerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You won! Refresh the page to play again";
@@ -108,6 +112,7 @@ function playScissors(){
         computerScore += 1;
         computerScoreText.innerHTML = computerScore;
         answer.innerHTML = "You lost... You chose scissors and the computer chose rock";
+        answerIMG.setAttribute("src", "images/scissorsVSrock.png");
         if (computerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You lost, refresh the page to play again";
