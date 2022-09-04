@@ -14,6 +14,7 @@ function playRock(){
         if (playerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You won! Refresh the page to play again";
+            answerIMG.setAttribute("src", "images/.png");
             const rockbutton = document.querySelector("#rock");
             rockbutton.removeEventListener("click", playRock);
             const scissorsbutton = document.querySelector("#scissors");
@@ -22,7 +23,7 @@ function playRock(){
             paperbutton.removeEventListener("click", playPaper);
         }
     }else if(computerChoice === 1){
-        answer.innerHTML = "It's a tie, you both chose rock";
+        answerIMG.setAttribute("src", "images/rockVSrock.png");
     }else if(computerChoice === 2){
         computerScore += 1;
         computerScoreText.innerHTML = computerScore;
@@ -30,6 +31,7 @@ function playRock(){
         if (computerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You lost, refresh the page to play again";
+            answerIMG.setAttribute("src", "images/.png");
             const rockbutton = document.querySelector("#rock");
             rockbutton.removeEventListener("click", playRock);
             const scissorsbutton = document.querySelector("#scissors");
@@ -47,6 +49,7 @@ rockbutton.addEventListener("click", playRock);
 function playPaper(){
     let computerChoice = Math.floor(Math.random()*3);
     let answer = document.querySelector("#answer");
+    let answerIMG = document.querySelector("#resultIMG");
     if(computerChoice === 0){
         playerScore += 1;
         yourScoreText.innerHTML = playerScore;
@@ -54,6 +57,7 @@ function playPaper(){
         if (playerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You won! Refresh the page to play again";
+            answerIMG.setAttribute("src", "images/.png");
             const paperbutton = document.querySelector("#paper");
             paperbutton.removeEventListener("click", playPaper);
             const rockbutton = document.querySelector("#rock");
@@ -62,7 +66,7 @@ function playPaper(){
             scissorsbutton.removeEventListener("click", playScissors);
         }
     }else if(computerChoice === 1){
-        answer.innerHTML = "It's a tie, you both chose paper";
+        answerIMG.setAttribute("src", "images/paperVSpaper.png");
     }else if(computerChoice === 2){
         computerScore += 1;
         computerScoreText.innerHTML = computerScore;
@@ -70,6 +74,7 @@ function playPaper(){
         if (computerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You lost, refresh the page to play again";
+            answerIMG.setAttribute("src", "images/.png");
             const paperbutton = document.querySelector("#paper");
             paperbutton.removeEventListener("click", playPaper);
             const rockbutton = document.querySelector("#rock");
@@ -87,6 +92,7 @@ paperbutton.addEventListener("click", playPaper);
 function playScissors(){
     let computerChoice = Math.floor(Math.random()*3);
     let answer = document.querySelector("#answer");
+    let answerIMG = document.querySelector("#resultIMG");
     if(computerChoice === 0){
         playerScore += 1;
         yourScoreText.innerHTML = playerScore;
@@ -94,6 +100,7 @@ function playScissors(){
         if (playerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You won! Refresh the page to play again";
+            answerIMG.setAttribute("src", "images/.png");
             const scissorsbutton = document.querySelector("#scissors");
             scissorsbutton.removeEventListener("click", playScissors);
             const rockbutton = document.querySelector("#rock");
@@ -102,7 +109,7 @@ function playScissors(){
             paperbutton.removeEventListener("click", playPaper);
         }
     }else if(computerChoice === 1){
-        answer.innerHTML = "It's a tie, you both chose scissors";
+        answerIMG.setAttribute("src", "images/scissorsVSscissors.png");
     }else if(computerChoice === 2){
         computerScore += 1;
         computerScoreText.innerHTML = computerScore;
@@ -110,6 +117,7 @@ function playScissors(){
         if (computerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "You lost, refresh the page to play again";
+            answerIMG.setAttribute("src", "images/.png");
             const scissorsbutton = document.querySelector("#scissors");
             scissorsbutton.removeEventListener("click", playScissors);
             const rockbutton = document.querySelector("#rock");
