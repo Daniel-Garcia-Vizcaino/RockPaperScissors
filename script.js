@@ -14,7 +14,7 @@ function playRock(){
         if (playerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "Refresh the page to play again";
-            answerIMG.setAttribute("src", "images/.png");
+            answerIMG.setAttribute("src", "images/youWin.png");
             const rockbutton = document.querySelector("#rock");
             rockbutton.removeEventListener("click", playRock);
             const scissorsbutton = document.querySelector("#scissors");
@@ -31,7 +31,7 @@ function playRock(){
         if (computerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "Refresh the page to play again";
-            answerIMG.setAttribute("src", "images/.png");
+            answerIMG.setAttribute("src", "images/youLost.png");
             const rockbutton = document.querySelector("#rock");
             rockbutton.removeEventListener("click", playRock);
             const scissorsbutton = document.querySelector("#scissors");
@@ -57,7 +57,7 @@ function playPaper(){
         if (playerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "Refresh the page to play again";
-            answerIMG.setAttribute("src", "images/.png");
+            answerIMG.setAttribute("src", "images/youWin.png");
             const paperbutton = document.querySelector("#paper");
             paperbutton.removeEventListener("click", playPaper);
             const rockbutton = document.querySelector("#rock");
@@ -74,7 +74,7 @@ function playPaper(){
         if (computerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "Refresh the page to play again";
-            answerIMG.setAttribute("src", "images/.png");
+            answerIMG.setAttribute("src", "images/youLost.png");
             const paperbutton = document.querySelector("#paper");
             paperbutton.removeEventListener("click", playPaper);
             const rockbutton = document.querySelector("#rock");
@@ -100,7 +100,7 @@ function playScissors(){
         if (playerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "Refresh the page to play again";
-            answerIMG.setAttribute("src", "images/.png");
+            answerIMG.setAttribute("src", "images/youWin.png");
             const scissorsbutton = document.querySelector("#scissors");
             scissorsbutton.removeEventListener("click", playScissors);
             const rockbutton = document.querySelector("#rock");
@@ -117,7 +117,7 @@ function playScissors(){
         if (computerScore > 4) {
             let answer = document.querySelector("#answer");
             answer.innerHTML = "Refresh the page to play again";
-            answerIMG.setAttribute("src", "images/.png");
+            answerIMG.setAttribute("src", "images/youLost.png");
             const scissorsbutton = document.querySelector("#scissors");
             scissorsbutton.removeEventListener("click", playScissors);
             const rockbutton = document.querySelector("#rock");
