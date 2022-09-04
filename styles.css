@@ -3,12 +3,12 @@
 }
 
 .mainContainer{
-    background-color: skyblue;
+    background-color: rgb(169, 227, 237);
     height: 1000px;
 }
 
 .mainHeader{
-    color: rgb(91, 163, 65);
+    color: rgb(30, 188, 136);
     font-size: 70px;
 }
 
